@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Entertainment Page - Student Hub</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /*TOP BANNER*/
+    .banner {
+      background-color: #4e9fc2;
+      color: white;
+      padding: 10px 20px;
+    }
+
+    .banner-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .logo {
+      height: 40px;
+      margin-right: 20px;
+    }
+
+    .search-bar {
+      flex: 1;
+      max-width: 300px;
+      padding: 6px;
+      margin: 0 20px;
+      border-radius: 20px;
+      border: none;
+    }
+
+    .auth-buttons button {
+      padding: 6px 10px;
+      margin-left: 10px;
+      background-color: white;
+      color: #4e9fc2;
+      border: none;
+      border-radius: 4px;
+    }
+
+    /*NAVIGATION LINKS*/
+    .nav {
+      margin-top: 5px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 10px 0;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
+    /*MAIN CONTENT*/
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      flex: 1;
+    }
+
+    .left-box {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+    }
+
+    .info-box {
+      background-color: #dbeeff;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .right-box {
+        flex: 2;
+        min-width: 300px;
+        padding: 20px 10px 20px 20px; 
+    }
+
+
+    .right-box img {
+      width: 100%;
+      height: auto;
+      max-width: 1000px;
+      border: 2px solid #ccc;
+    }
+
+    /*FOOTER*/
+    footer {
+      background-color: #4e9fc2;
+      color: white;
+      text-align: center;
+      height: 80px;
+      line-height: 80px;
+      font-size: 16px;
+      margin-top: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--BANNER TOP-->
+  <div class="banner">
+    <div class="banner-row">
+      <img src="ELOGO.png" alt="Logo" class="logo">
+      <input type="text" class="search-bar" placeholder="Search...">
+      <div class="auth-buttons">
+        <button>Log in</button>
+        <button>Sign up</button>
+      </div>
+    </div>
+
+    <!--Navigation menu-->
+    <div class="nav">
+      <a href="#">Home</a>
+      <a href="#">Student Help</a>
+      <a href="#">Projects</a>
+      <a href="#">Careers and Jobs</a>
+      <a href="#">Mental Health</a>
+      <a href="#">Entertainment</a>
+    </div>
+  </div>
+
+  <!--MAIN CONTENT-->
+  <div class="container">
+
+    <!--Left side info-->
+    <div class="left-box">
+      <h2>ENTERTAINMENT</h2>
+      <div class="info-box">
+        <p>Need to get out of the house and escape boredom? Visit these places!!!</p>
+        <p>1. Most museums in Manchester are free so you can visit any that interest you.</p>
+        <p>2. Night Life – there's many bars and clubs in Manchester.</p>
+        <p>3. Parks and outdoor areas are great when the weather is nice.</p>
+        <p>4. Check the Student Union site for events happening this month.</p>
+      </div>
+    </div>
+
+    <!--right side map image-->
+    <div class="right-box">
+      <img src="MAPPY.webp" alt="Map of Manchester">
+    </div>
+  </div>
+
+  <!--footewr-->
+  <footer>
+    <p>&copy; 2025 Student Hub Website</p>
+  </footer>
+
+</body>
+</html>
