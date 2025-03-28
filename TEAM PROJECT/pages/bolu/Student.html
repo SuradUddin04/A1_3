@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Help Forum</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 15px 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .navbar .left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .navbar input[type="text"] {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      width: 200px;
+    }
+
+    .links {
+      display: flex;
+      gap: 25px;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .links a:hover {
+      color: #007bff;
+    }
+
+    .auth-buttons button {
+      padding: 8px 20px;
+      margin-left: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .auth-buttons button:first-child {
+      background-color: #fff;
+      border: 1px solid #007bff;
+      color: #007bff;
+    }
+
+    .auth-buttons button:last-child {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .main {
+      display: flex;
+      max-width: 1200px;
+      margin: 30px auto;
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    .posts {
+      flex: 2;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .posts h2 {
+      color: #333;
+      margin-top: 0;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 10px;
+    }
+
+    .post-card {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 6px;
+      border-left: 4px solid #007bff;
+    }
+
+    .post-card p {
+      margin: 0 0 10px 0;
+      color: #444;
+    }
+
+    .post-card strong {
+      color: #007bff;
+    }
+
+    .post-card button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .post-card button:hover {
+      background-color: #0056b3;
+    }
+
+    .create-button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .create-button:hover {
+      background-color: #218838;
+    }
+
+    .image-section {
+      flex: 1;
+    }
+
+    .image-section img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .footer {
+      background-color: #333;
+      height: 60px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="left">
+      <img src="mmu.png" alt="logo" style="width: 30px; height: 30px; vertical-align: middle;">
+      <input type="text" placeholder="search">
+    </div>
+    <div class="links">
+      <a href="#">Home</a>
+      <a href="#">Student Help</a>
+      <a href="#">Projects</a>
+      <a href="#">Careers and Jobs</a>
+      <a href="#">Mental Health</a>
+      <a href="#">Entertainment</a>
+    </div>
+    <div class="auth-buttons">
+      <button>Log in</button>
+      <button>Sign up</button>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="posts">
+      <h2>STUDENT HELP</h2>
+      <div class="post-card">
+        <p><strong>Godfrey:</strong> Looking for a cheap area for accommodation near MMU.</p>
+        <button>Reply</button>
+      </div>
+      <div class="post-card">
+        <p><strong>Sara154:</strong> Where do I go to receive student financial help as I'm not able to do it online.</p>
+        <button>Reply</button>
+      </div>
+      <button class="create-button">Create a post</button>
+    </div>
+    <div class="image-section">
+      <img src="students_img.jpeg" alt="students">
+    </div>
+  </div>
+
+  <div class="footer"></div>
+</body>
+</html>
